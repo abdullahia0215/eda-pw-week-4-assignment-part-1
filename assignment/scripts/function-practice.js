@@ -32,16 +32,19 @@ console.log(addNumbers(3, 4));
 function multiplyThree(firstNum, secondNum, thirdNum) {
   return firstNum * secondNum * thirdNum;
 }
-console.log(multiplyThree(2, 1, 2));
+console.log(multiplyThree(2, 1, 2))
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
-  }
-  return;
+    return true;
+  } else {
+    return false;
 }
+};
+
+console.log(isPositive(2));
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
