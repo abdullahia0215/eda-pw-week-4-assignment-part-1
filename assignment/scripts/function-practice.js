@@ -123,6 +123,13 @@ console.log("Positive numbers from the array:", allPositive([3,-2,-7,-1,-3, 2, 1
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+// PROBLEM: Write a function that takes an integer minutes and converts it to seconds.
+
+function minuteConversion(minutes){
+  return minutes * 60;
+}
+
+console.log(minuteConversion(1));
 
 
 // DO NOT MODIFY
