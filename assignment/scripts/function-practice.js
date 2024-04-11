@@ -78,25 +78,47 @@ console.log(find(12,[2, 4, 6, 8, 10, 12]));
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  for (let i=0;i<string.length;i++)
+  if (string[0]===letter){
+    return true
+  }
+  return false
 }
+
+console.log('is g the first letter in grab the bag?',isFirstLetter('g', 'grab the bag'));
+console.log('is p the first letter in grab the bag?', isFirstLetter('p', 'grab the bag'));
 
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-
+for(let i=0; i<array.length; i++){
   // TODO: return the sum
+  sum+=array[i];
+}
+return sum;
 }
 
+console.log(sumAll([2,3,4,5,6]));
+console.log(sumAll([6,2,3,5,3,3,5,4,5]));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
+function allPositive(inputArray) {
+  let positiveArray = [];
+    
+
+  for (let i = 0; i < inputArray.length; i++) {
+      if (inputArray[i] > 0) {
+          positiveArray.push(inputArray[i]);
+      }
+  }
+
+  return positiveArray;
 
 }
-
+console.log("Positive numbers from the array:", allPositive([3,-2,-7,-1,-3, 2, 1]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
