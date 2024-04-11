@@ -45,6 +45,7 @@ function isPositive(number) {
 };
 
 console.log(isPositive(2));
+console.log(isPositive(-2));
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
